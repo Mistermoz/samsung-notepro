@@ -1,2 +1,2 @@
-# samsung-notepro
+# Samsung Notepro
 Scroll One Page
