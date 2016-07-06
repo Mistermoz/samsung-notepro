@@ -1,0 +1,193 @@
+/*---------------------------------------------------
+	LESS Elements 0.9
+  ---------------------------------------------------
+	A set of useful LESS mixins
+	More info at: http://lesselements.com
+  ---------------------------------------------------*/
+section.screen12 {
+  background: url(/img/screen12/screen12-bg.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  font-family: 'klavika-bold';
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+section.screen12 .sprite .screen12-coffee {
+  background-image: url(/img/screen12/screen12-sp.png);
+  background-position: -353px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 318px;
+  height: 318px;
+}
+section.screen12 .sprite .screen12-coffee-smoke1 {
+  background-image: url(/img/screen12/screen12-sp.png);
+  background-position: -5px -333px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 166px;
+  height: 147px;
+}
+section.screen12 .sprite .screen12-coffee-smoke2 {
+  background-image: url(/img/screen12/screen12-sp.png);
+  background-position: -181px -333px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 334px;
+  height: 485px;
+}
+section.screen12 .sprite .screen12-compas {
+  background-image: url(/img/screen12/screen12-sp.png);
+  background-position: -525px -333px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 298px;
+  height: 277px;
+}
+section.screen12 .sprite .screen12-spen {
+  background-image: url(/img/screen12/screen12-sp.png);
+  background-position: -681px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 52px;
+  height: 293px;
+}
+section.screen12 div.container {
+  padding: 147px 0px 0px 45px;
+}
+section.screen12 div.container div.text {
+  position: relative;
+  z-index: 2;
+}
+section.screen12 div.container div.text h3 {
+  color: #6e6e70;
+}
+section.screen12 div.container div.objects div.coffee {
+  background-image: url(/img/screen12/screen12-sp.png);
+  background-position: -353px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 318px;
+  height: 318px;
+  position: absolute;
+  right: 50%;
+  margin-right: -530px;
+}
+section.screen12 div.container div.objects div.coffee video {
+  height: 224px;
+  margin-left: 47px;
+  margin-top: 47px;
+  width: 224px;
+}
+section.screen12 div.container div.objects div.coffee video.disabled {
+  display: none;
+}
+section.screen12 div.container div.objects div.compas {
+  background-image: url(/img/screen12/screen12-sp.png);
+  background-position: -525px -333px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 298px;
+  height: 277px;
+  bottom: 50%;
+  position: absolute;
+  right: 50%;
+  margin-right: -130px;
+  margin-bottom: -200px;
+}
+section.screen12 div.container div.objects div.drag {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -300px;
+  top: 50%;
+  width: 500px;
+}
+section.screen12 div.container div.objects div.drag p.fa {
+  cursor: move;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+section.screen12 div.container div.objects div.drag p.fa:before {
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  display: block;
+  height: 38px;
+  font-size: 20px;
+  line-height: 38px;
+  position: relative;
+  text-align: center;
+  transition: background 250ms, color 250ms;
+  width: 38px;
+  z-index: 2;
+}
+section.screen12 div.container div.objects div.drag p:hover:before {
+  background: #000;
+  color: #fff;
+}
+section.screen12 div.container div.objects div.drag p:last-child {
+  font-family: 'samsung-bold';
+  text-align: center;
+  text-transform: uppercase;
+}
+section.screen12 div.container div.objects div.drag:before {
+  border-top: 1px dashed #fff;
+  height: 1px;
+  content: '';
+  position: absolute;
+  top: 19px;
+  width: 500px;
+  z-index: 1;
+}
+section.screen12 div.container div.objects div.pen {
+  background-image: url(/img/screen12/screen12-sp.png);
+  background-position: -681px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 52px;
+  height: 293px;
+  left: 50%;
+  margin-left: -530px;
+  position: absolute;
+  z-index: 1;
+}
+@media all and (max-width: 1280px) {
+  section.screen12 div.container div.text h2 span {
+    font-size: 17px !important;
+  }
+}
+@media all and (max-width: 1800px) {
+  section.screen12 div.container div.text h2 span {
+    font-size: 17px !important;
+  }
+  section.screen12 div.container div.objects div.compas {
+    bottom: 60%;
+    right: 55%;
+  }
+  section.screen12 div.container div.objects div.drag {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -128px;
+    margin-top: -243px;
+  }
+  section.screen12 div.container div.objects div.drag p.fa {
+    margin-bottom: 10px;
+  }
+  section.screen12 div.container div.objects div.drag:before {
+    border-top: 1px dashed #fff;
+    height: 1px;
+    content: '';
+    position: absolute;
+    top: 19px;
+    width: 500px;
+    z-index: 1;
+  }
+  section.screen12 div.container div.objects div.pen {
+    display: none;
+  }
+}

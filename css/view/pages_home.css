@@ -1,0 +1,962 @@
+/*---------------------------------------------------
+	LESS Elements 0.9
+  ---------------------------------------------------
+	A set of useful LESS mixins
+	More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.sprite .home-10-logo {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 232px;
+  height: 33px;
+}
+.sprite .home-10-thumb {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -247px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 438px;
+  height: 372px;
+}
+.sprite .home-8-logo {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -387px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 234px;
+  height: 39px;
+}
+.sprite .home-8-thumb {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -695px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 355px;
+  height: 509px;
+}
+.sprite .home-arrow {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 49px;
+  height: 49px;
+}
+.sprite .home-hand-scroll-warning {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -64px -523px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 37px;
+  height: 90px;
+}
+.sprite .home-logo-pro {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -111px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 347px;
+  height: 80px;
+}
+.sprite .home-logo-samsung {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -468px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 142px;
+  height: 47px;
+}
+.sprite .home-tab-8 {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -721px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 91px;
+  height: 156px;
+}
+.sprite .home-tab-8-hover {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -620px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 91px;
+  height: 156px;
+}
+.sprite .home-tab-10 {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -822px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 212px;
+  height: 151px;
+}
+.sprite .home-tab-10-hover {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -685px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 212px;
+  height: 151px;
+}
+section.home {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+}
+section.home div.slider {
+  height: 100%;
+  width: 100%;
+}
+section.home div.slider div.container {
+  height: 100%;
+  padding: 0px 25px;
+  position: relative;
+  text-align: center;
+}
+section.home div.slider div.container div.product div.text {
+  display: inline-block;
+  font-family: 'samsung-regular';
+  text-align: left;
+  vertical-align: middle;
+  width: 550px;
+}
+section.home div.slider div.container div.product div.text h3 {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 232px;
+  height: 33px;
+  margin-bottom: 58px;
+  text-indent: -9999px;
+}
+section.home div.slider div.container div.product div.text h4 {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -387px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 234px;
+  height: 39px;
+  margin-bottom: 58px;
+  text-indent: -9999px;
+}
+section.home div.slider div.container div.product div.text > p {
+  border-bottom: 1px solid #808080;
+  color: #808080;
+  font-size: 17px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+section.home div.slider div.container div.product div.text div.description div.box {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 11px;
+  vertical-align: top;
+  width: 49%;
+}
+section.home div.slider div.container div.product div.text div.description div.box h5 {
+  font-family: 'samsung-bold';
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+section.home div.slider div.container div.product div.text div.description div.box p {
+  color: #3e3e3e;
+  margin-bottom: 10px;
+}
+section.home div.slider div.container div.social {
+  color: #808282;
+  font-family: 'klavika-medium';
+  font-size: 12px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+section.home div.slider div.container div.social a {
+  background: #3e3e3e;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 250ms;
+  width: 37px;
+}
+section.home div.slider div.container div.social a:nth-of-type(1) {
+  margin-right: 25px;
+}
+section.home div.slider div.container div.social a:hover:nth-of-type(1) {
+  background: #3B5998;
+}
+section.home div.slider div.container div.social a:hover:nth-of-type(2) {
+  background: #36b8e6;
+}
+section.home div.slider div.container div.social p {
+  display: block;
+  margin-bottom: 10px;
+}
+section.home div.slider div.container div.top {
+  padding-top: 25px;
+  position: relative;
+  z-index: 10;
+}
+section.home div.slider div.container div.top h2 {
+  float: left;
+}
+section.home div.slider div.container div.top h2 a {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -111px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 347px;
+  height: 80px;
+  text-indent: -99999px;
+}
+section.home div.slider div.container div.top h3 {
+  float: right;
+}
+section.home div.slider div.container div.top h3 a {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -468px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 142px;
+  height: 47px;
+  text-indent: 99999px;
+}
+section.home div.slider#tab8 {
+  right: -100%;
+  position: fixed;
+  transition: right 250ms;
+  top: 0px;
+}
+section.home div.slider#tab8 div.container div.links {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=180);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: -25px;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+}
+section.home div.slider#tab8 div.container div.links a {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 49px;
+  height: 49px;
+  transition: opacity 250ms;
+}
+section.home div.slider#tab8 div.container div.links a:hover {
+  opacity: 0.7;
+}
+section.home div.slider#tab8 div.container div.product {
+  height: 635px;
+  left: 50%;
+  margin-left: -562px;
+  margin-top: -265px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  width: 1024px;
+}
+section.home div.slider#tab8 div.container div.product div.thumb {
+  background: url(/img/home/home-8-thumb.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 509px;
+  margin-right: 30px;
+  vertical-align: middle;
+  width: 355px;
+}
+section.home div.slider#tab8 div.container div.social {
+  position: relative;
+  top: 87%;
+}
+section.home div.slider#tab10 {
+  left: -100%;
+  position: fixed;
+  transition: all 250ms ease;
+  top: 0px;
+}
+section.home div.slider#tab10 div.container div.links {
+  margin-top: -25px;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+}
+section.home div.slider#tab10 div.container div.links a {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 49px;
+  height: 49px;
+  transition: opacity 250ms;
+}
+section.home div.slider#tab10 div.container div.links a:hover {
+  opacity: 0.7;
+}
+section.home div.slider#tab10 div.container div.product {
+  height: 635px;
+  left: 50%;
+  margin-left: -562px;
+  margin-top: -265px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  width: 1024px;
+}
+section.home div.slider#tab10 div.container div.product div.thumb {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -247px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 438px;
+  height: 372px;
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+section.home div.slider#tab10 div.container div.social {
+  position: relative;
+  top: 87%;
+}
+section.home div.slider#tab12 {
+  left: 0px;
+  position: relative;
+  transition: left 250ms;
+}
+section.home div.slider#tab12 div.container div.products.links {
+  position: absolute;
+  top: 50%;
+  z-index: 11;
+}
+section.home div.slider#tab12 div.container div.products.links a {
+  color: #000;
+  display: inline-block;
+  font-family: 'klavika-medium';
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+section.home div.slider#tab12 div.container div.products.links a span {
+  bottom: 0px;
+  position: relative;
+}
+section.home div.slider#tab12 div.container div.products.links a span:before {
+  transition: height 250ms;
+}
+section.home div.slider#tab12 div.container div.products.links.tab10 {
+  left: 25px;
+  margin-top: -90px;
+}
+section.home div.slider#tab12 div.container div.products.links.tab10 a span {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -822px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 212px;
+  height: 151px;
+}
+section.home div.slider#tab12 div.container div.products.links.tab10 a span:before {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -5px -685px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 212px;
+  height: 151px;
+  content: '';
+  height: 0%;
+  position: absolute;
+}
+section.home div.slider#tab12 div.container div.products.links.tab10 a:hover span:before {
+  height: 100%;
+}
+section.home div.slider#tab12 div.container div.products.links.tab8 {
+  right: 25px;
+  margin-top: -100px;
+}
+section.home div.slider#tab12 div.container div.products.links.tab8 a {
+  text-align: right;
+}
+section.home div.slider#tab12 div.container div.products.links.tab8 a span {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -721px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 91px;
+  height: 156px;
+  display: inline-block;
+}
+section.home div.slider#tab12 div.container div.products.links.tab8 a span:before {
+  background-image: url(/img/home/home-default-sp.png);
+  background-position: -620px -524px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 91px;
+  height: 156px;
+  content: '';
+  height: 0%;
+  position: absolute;
+}
+section.home div.slider#tab12 div.container div.products.links.tab8 a:hover span:before {
+  height: 100%;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 {
+  left: 50%;
+  margin-left: -410px;
+  margin-top: -370px;
+  padding-bottom: 25px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 821px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body {
+  height: 430px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: opacity 250ms;
+  width: 100%;
+  z-index: 1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas {
+  left: -12px;
+  opacity: 0;
+  position: relative;
+  transition: opacity 800ms;
+  top: 137px;
+  width: 100%;
+  z-index: 0;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img {
+  display: block;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  transition: top 500ms, opacity 250ms;
+  width: 87%;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa1 {
+  margin-left: -348px;
+  top: 54px;
+  z-index: 5;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa2 {
+  margin-left: -358px;
+  opacity: 1;
+  top: 35px;
+  z-index: 4;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa3 {
+  margin-left: -350px;
+  top: 58px;
+  z-index: 3;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa4 {
+  margin-left: -357px;
+  top: 49px;
+  z-index: 2;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa5 {
+  margin-left: -351px;
+  top: 57px;
+  z-index: 1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa {
+  opacity: 1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa1 {
+  top: -275px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa2 {
+  top: -229px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa3 {
+  top: -130px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa4 {
+  top: -68px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa5 {
+  top: 2px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color {
+  height: 500px;
+  opacity: 0;
+  position: relative;
+  transition: opacity 800ms, visibility 800ms;
+  -webkit-transition: opacity 800ms ease-in-out 0s, visibility 800ms ease-in-out 0s;
+  width: 805px;
+  z-index: 0;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color p {
+  border-radius: 50%;
+  display: block;
+  height: 38px;
+  left: 383px;
+  line-height: 38px;
+  margin-left: -22px;
+  margin-top: -15px;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 250ms;
+  top: 50%;
+  width: 42px;
+  z-index: 7;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color p:after {
+  border: none;
+  border-right: 1px dashed #c7c7c7;
+  content: '';
+  display: block;
+  height: 194px;
+  left: 48%;
+  position: absolute;
+  top: -46px;
+  width: 1px;
+  z-index: 0;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color p:before {
+  background: #ffffff url(/img/home/color-p.png) 0 0 no-repeat;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 38px;
+  left: 1px;
+  position: relative;
+  top: 62%;
+  width: 42px;
+  z-index: 2;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color p.disabled {
+  opacity: 0 !important;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div {
+  border: transparent;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div img {
+  border: none;
+  position: absolute;
+  top: -160px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.color-black {
+  left: 0px;
+  z-index: 3;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.color-black img {
+  left: -281px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.color-black:before {
+  background: url(/img/home/note_negro.png) 0 0 no-repeat;
+  content: '';
+  display: block;
+  height: 115%;
+  left: -281px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 500ms;
+  top: -160px;
+  width: 171%;
+  z-index: 2;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.color-white {
+  right: 0px;
+  z-index: 2;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.color-white img {
+  right: -306px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.hotspot {
+  background: url(/img/home/ie-a.gif) 0 0 repeat;
+  cursor: ew-resize;
+  height: 100%;
+  margin-left: -100px;
+  padding-right: 200px;
+  z-index: 0;
+  width: 100%;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.hotspot.enabled {
+  z-index: 11;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color.skrollable-between div.color-black,
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color.skrollable-after div.color-black {
+  transition: width 700ms;
+  width: 100% !important;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color.skrollable-between div.color-black:before,
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color.skrollable-after div.color-black:before {
+  opacity: 1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.opening {
+  height: 574px;
+  left: 50%;
+  margin-left: -418px;
+  opacity: 0;
+  position: absolute;
+  top: -147px;
+  transition: opacity 800ms;
+  width: 100%;
+  z-index: 10;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.opening img {
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opactity 100ms;
+  width: 1100px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.opening img.enabled {
+  opacity: 1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.body div.opening.enabled {
+  animation: up 3s linear;
+  -webkit-animation: up 3s linear;
+  opacity: 1;
+}
+@keyframes up {
+  from {
+    top: 1080px;
+  }
+  to {
+    top: -147px;
+  }
+}
+@keyframes updos {
+  from {
+    top: 1080px;
+  }
+  to {
+    top: 22px;
+  }
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.social {
+  opacity: 0;
+  position: relative;
+  transition: opacity 800ms;
+  z-index: 4;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.text {
+  margin-bottom: 20px;
+  opacity: 0;
+  position: relative;
+  transition: opacity 800ms;
+  z-index: 2;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.text h4 {
+  color: #808282;
+  font-family: 'klavika-light';
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.text h4 strong {
+  color: #36b8e6;
+  font-family: 'klavika-bold';
+  text-transform: uppercase;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.text p {
+  color: #3e3e3e;
+  font-family: 'klavika-light';
+  font-size: 14px;
+  line-height: 18px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.text p strong {
+  font-family: 'klavika-medium';
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.warning {
+  opacity: 0;
+  transition: opacity 800ms;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.warning p {
+  color: #3e3e3e;
+  font-family: 'klavika-medium';
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+section.home div.slider#tab12 div.container div.products.tablet12 div.warning span {
+  background: url(/img/scroll.gif);
+  display: inline-block;
+  height: 87px;
+  position: relative;
+  top: 20px;
+  width: 35px;
+}
+section.home div.slider#tab12 div.container div.products.tablet12.enabled div.body div.capas {
+  opacity: 1;
+  z-index: 1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12.enabled div.body div.color {
+  opacity: 1;
+  z-index: 2;
+}
+section.home div.slider#tab12 div.container div.products.tablet12.enabled div.body div.opening {
+  opacity: 0;
+  z-index: -1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12.enabled div.social {
+  opacity: 1;
+  z-index: 1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12.enabled div.text {
+  opacity: 1;
+  z-index: 1;
+}
+section.home div.slider#tab12 div.container div.products.tablet12.enabled div.warning {
+  opacity: 1;
+  z-index: 1;
+}
+section.home.slider-tab8 div.slider#tab8 {
+  right: 0px;
+}
+section.home.slider-tab8 div.slider#tab12 {
+  left: -100%;
+}
+section.home.slider-tab10 div.slider#tab10 {
+  left: 0px;
+}
+section.home.slider-tab10 div.slider#tab12 {
+  left: 100%;
+}
+@media all and (max-width: 1800px) {
+  section.home div.slider#tab8 div.container div.social,
+  section.home div.slider#tab10 div.container div.social {
+    left: 50%;
+    margin-left: -406px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 50%;
+  }
+  section.home div.slider#tab8 div.container div.product div.thumb {
+    height: 366px;
+    width: 255px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 {
+    margin-left: -286px;
+    margin-top: -370px;
+    top: 50%;
+    width: 572px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body {
+    height: 430px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas {
+    left: 117px;
+    opacity: 0;
+    position: relative;
+    transition: opacity 800ms;
+    top: 207px;
+    width: 100%;
+    z-index: 0;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    transition: top 500ms, opacity 250ms;
+    width: 87%;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa1 {
+    margin-left: -364px;
+    top: 54px;
+    z-index: 5;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa2 {
+    margin-left: -370px;
+    opacity: 1;
+    top: 35px;
+    z-index: 4;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa3 {
+    margin-left: -364px;
+    top: 58px;
+    z-index: 3;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa4 {
+    margin-left: -364px;
+    top: 49px;
+    z-index: 2;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas img.capa.capa5 {
+    margin-left: -364px;
+    top: 57px;
+    z-index: 1;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa {
+    opacity: 1;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa1 {
+    top: -275px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa2 {
+    top: -229px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa3 {
+    top: -130px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa4 {
+    top: -68px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.capas.up div.capa.capa5 {
+    top: 2px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color {
+    height: 457px;
+    width: 567px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color p {
+    line-height: 38px;
+    left: 264px;
+    width: 42px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color p:after {
+    height: 136px;
+    top: 44px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color p:before {
+    top: 83px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div img {
+    top: 12px;
+    width: 980px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.color-black img {
+    left: -198px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.color-black:before {
+    background-size: 100% 100%;
+    height: 441px;
+    left: -197px;
+    top: 5px;
+    width: 980px;
+    z-index: 2;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.color-white img {
+    right: -215px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.hotspot {
+    height: 100%;
+    margin-left: -100px;
+    padding-right: 200px;
+    z-index: 0;
+    width: 100%;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.color > div.hotspot.enabled {
+    z-index: 11;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.opening {
+    height: 600px;
+    left: 50%;
+    margin-left: -287px;
+    opacity: 0;
+    position: absolute;
+    top: 22px;
+    transition: opacity 800ms;
+    width: 100%;
+    z-index: 10;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.opening img {
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opactity 100ms;
+    width: 774px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.opening img.enabled {
+    opacity: 1;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.body div.opening.enabled {
+    animation: updos 3s linear;
+    opacity: 1;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.social {
+    opacity: 0;
+    position: relative;
+    transition: opacity 800ms;
+    z-index: 4;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.text {
+    left: 50%;
+    margin-bottom: 20px;
+    margin-left: -385px;
+    opacity: 0;
+    position: relative;
+    transition: opacity 800ms;
+    width: 770px;
+    z-index: 2;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.text h4 {
+    color: #808282;
+    font-family: 'klavika-light';
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.text h4 strong {
+    color: #36b8e6;
+    font-family: 'klavika-bold';
+    text-transform: uppercase;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.text p {
+    color: #3e3e3e;
+    font-family: 'klavika-light';
+    font-size: 14px;
+    line-height: 18px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.text p strong {
+    font-family: 'klavika-medium';
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12.enabled div.body div.capas {
+    opacity: 1;
+    z-index: 1;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12.enabled div.body div.color {
+    opacity: 1;
+    z-index: 2;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12.enabled div.body div.opening {
+    opacity: 0;
+    z-index: -1;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12.enabled div.social {
+    opacity: 1;
+    z-index: 1;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12.enabled div.text {
+    opacity: 1;
+    z-index: 1;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12.enabled div.warning {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+@media all and (max-height: 800px) {
+  section.home div.slider#tab12 div.container div.products.tablet12 div.warning {
+    left: 50%;
+    margin-left: -124px;
+    position: absolute;
+    top: 40px;
+  }
+  section.home div.slider#tab12 div.container div.products.tablet12 div.warning p {
+    margin-bottom: 0px;
+  }
+}

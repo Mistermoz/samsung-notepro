@@ -1,0 +1,138 @@
+@import "../mixin.less";
+
+.video {
+	.header-logo-pro {
+		background-image: url(/img/header/header-sp.png);
+
+		.stitches-sprite(-5px, -5px, 203px, 29px);
+	}
+
+	.header-logo-samsung {
+		background-image: url(/img/header/header-sp.png);
+
+		.stitches-sprite(-5px, -44px, 107px, 35px);
+	}
+
+	.header-logo-samsung-hover {
+		background-image: url(/img/header/header-sp.png);
+
+		.stitches-sprite(-121px, -44px, 107px, 35px);
+	}
+}
+section.video {
+	background: #000;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	z-index: 15;
+
+	video {
+		bottom: 0px;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+		position: absolute;
+		right: 0px;
+		width: auto;
+		z-index: 15;
+	}
+
+	div.pattern {
+		background: url(/img/video/before-pattern.png) 0 0 repeat;
+		display: block;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		position: relative;
+		text-align: center;
+		top: 0px;
+		width: auto;
+		z-index: 20;
+
+		a {
+			color: #fff;
+			display: inline-block;
+			font-size: 80px;
+			left: 50%;
+			margin-left: -40px;
+			margin-top: -40px;
+			opacity: 1;
+			position: absolute;
+			text-decoration: none;
+			transition: opacity 250ms;
+			top: 50%;
+
+			&.disabled {
+				opacity: 0;
+			}
+		}
+	}
+
+	div.social {
+		color: #808282;
+		font-family: 'klavika-medium';
+		font-size: 12px;
+		margin-bottom: 40px;
+		position: absolute;
+		left: 30px;
+		text-transform: uppercase;
+		top: 30px;
+		z-index: 40;
+
+		a {
+			background: #3e3e3e;
+			border-radius: 50%;
+			color: #fff;
+			display: inline-block;
+			font-size: 18px;
+			height: 37px;
+			line-height: 37px;
+			text-align: center;
+			text-decoration: none;
+			transition: background 250ms;
+			width: 37px;
+
+			&:nth-of-type(1) {
+				margin-right: 25px;
+			}
+
+			&:hover {
+				&:nth-of-type(1) {
+					background: #3B5998;
+				}
+
+				&:nth-of-type(2) {
+					background: #36b8e6;
+				}
+			}
+		}
+
+		p {
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+
+	h2 {
+		.box-flex(0.5);
+
+		margin-right: 20px;
+		position: absolute;
+		right: -1px;
+		text-indent: -9999px;
+		top: 20px;
+		z-index: 40;
+
+		a {
+			.video .header-logo-samsung;
+
+			transition: opacity 250ms;
+
+			&:hover {
+				.video .header-logo-samsung-hover;
+			}
+		}
+	}
+}

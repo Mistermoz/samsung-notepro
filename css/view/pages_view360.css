@@ -1,0 +1,73 @@
+section.view360 {
+  border-top: 1px solid #717b88;
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 12;
+}
+section.view360 div.container {
+  height: 650px;
+  left: 50%;
+  margin-left: -40%;
+  margin-top: -235px;
+  position: absolute;
+  top: 50%;
+  width: 80%;
+}
+section.view360 div.container div.tablet-360 {
+  position: absolute;
+  left: -180px;
+  width: 80%;
+}
+section.view360 div.container div.tablet-360 h4 {
+  background: url(/img/view360/360-h4.png) 0 0 no-repeat;
+  height: 96px;
+  margin: 0 auto;
+  position: relative;
+  text-indent: -9999px;
+  width: 415px;
+  z-index: 2;
+}
+section.view360 div.container div.tablet-360 div.secuence {
+  position: relative;
+  top: -50px;
+  z-index: 1;
+}
+section.view360 div.container div.tablet-360 div.secuence img {
+  position: absolute;
+  width: 100%;
+}
+section.view360 div.container div.text {
+  float: right;
+  padding-top: 50px;
+  position: relative;
+  width: 40%;
+  z-index: 2;
+}
+section.view360 div.container div.text div.box {
+  font-family: 'samsung-regular';
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 11px;
+  vertical-align: top;
+  width: 49%;
+}
+section.view360 div.container div.text div.box h5 {
+  font-family: 'samsung-bold';
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+section.view360 div.container div.text div.box p {
+  color: #3e3e3e;
+  margin-bottom: 10px;
+}
+@media all and (max-width: 1800px) {
+  section.view360 div.container div.tablet-360 h4 {
+    margin-bottom: 20px;
+  }
+  section.view360 div.container div.text div.box p {
+    font-size: 11px !important;
+  }
+}

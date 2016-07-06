@@ -1,0 +1,944 @@
+/*---------------------------------------------------
+	LESS Elements 0.9
+  ---------------------------------------------------
+	A set of useful LESS mixins
+	More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@font-face {
+  font-family: 'klavika-light';
+  src: url('../font/Klavika/klavika-light-webfont-webfont.eot');
+  src: url('../font/Klavika/klavika-light-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../font/Klavika/klavika-light-webfont-webfont.woff') format('woff'), url('../font/Klavika/klavika-light-webfont-webfont.ttf') format('truetype'), url('../font/Klavika/klavika-light-webfont-webfont.svg#klavikalight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'klavika-medium';
+  src: url('../font/Klavika/klavika-medium-webfont.eot');
+  src: url('../font/Klavika/klavika-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../font/Klavika/klavika-medium-webfont.woff') format('woff'), url('../font/Klavika/klavika-medium-webfont.ttf') format('truetype'), url('../font/Klavika/klavika-medium-webfont.svg#klavikamedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'klavika-bold';
+  src: url('../font/Klavika/klavika-bold-webfont-webfont.eot');
+  src: url('../font/Klavika/klavika-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../font/Klavika/klavika-bold-webfont-webfont.woff') format('woff'), url('../font/Klavika/klavika-bold-webfont-webfont.ttf') format('truetype'), url('../font/Klavika/klavika-bold-webfont-webfont.svg#klavikabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'samsung-bold';
+  src: url('/font/Samsung/samsungif_bd-webfont.eot');
+  src: url('/font/Samsung/samsungif_bd-webfont.eot?#iefix') format('embedded-opentype'), url('/font/Samsung/samsungif_bd-webfont.woff') format('woff'), url('/font/Samsung/samsungif_bd-webfont.ttf') format('truetype'), url('/font/Samsung/samsungif_bd-webfont.svg#samsung_interfacebold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'samsung-regular';
+  src: url('/font/Samsung/samsungif_rg-webfont.eot');
+  src: url('/font/Samsung/samsungif_rg-webfont.eot?#iefix') format('embedded-opentype'), url('/font/Samsung/samsungif_rg-webfont.woff') format('woff'), url('/font/Samsung/samsungif_rg-webfont.ttf') format('truetype'), url('/font/Samsung/samsungif_rg-webfont.svg#samsung_interfaceregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+input,
+textarea,
+select {
+  font-size: 13px;
+}
+body,
+html {
+  height: 100%;
+  min-height: 700px;
+}
+body a,
+html a {
+  outline: none;
+}
+body {
+  background: #fff;
+  display: none;
+  color: #000;
+  overflow-x: hidden;
+}
+body div.find {
+  background: #fff;
+  bottom: -50px;
+  font-family: 'klavika-medium';
+  padding: 5px 0px;
+  position: fixed;
+  text-align: center;
+  transition: bottom 500ms;
+  width: 100%;
+  z-index: 15;
+}
+body div.find a {
+  color: #3e3e3e;
+  display: inline-block;
+  font-family: 'samsung-bold';
+  text-indent: -9999px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 250ms;
+  vertical-align: middle;
+}
+body div.find a:first-child {
+  background: #fff;
+  border-radius: 5px;
+  display: block;
+  left: 50%;
+  margin-left: -75px;
+  text-indent: 0px;
+  position: absolute;
+  padding: 10px 15px;
+  top: -30px;
+}
+body div.find a.ripley {
+  background: url(/img/find/find-ripley.png) 0 0 no-repeat;
+  height: 32px;
+  margin-right: 40px;
+  width: 81px;
+}
+body div.find a.paris {
+  background: url(/img/find/find-paris.png) 0 0 no-repeat;
+  height: 57px;
+  margin-right: 40px;
+  width: 59px;
+}
+body div.find a.falabella {
+  background: url(/img/find/find-falabella.png) 0 0 no-repeat;
+  height: 41px;
+  width: 76px;
+}
+body div.find a:hover {
+  opacity: 0.7;
+}
+body div.find.enabled {
+  bottom: 0px !important;
+}
+body header {
+  background: #717b88;
+  display: block;
+  font-family: 'klavika-medium';
+  padding: 15px 0px;
+  overflow: hidden;
+  position: fixed;
+  transition: top 250ms;
+  width: 100%;
+  z-index: 15;
+}
+body header .sprite .header-logo-pro {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -5px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 203px;
+  height: 29px;
+}
+body header .sprite .header-logo-samsung {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -5px -44px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 107px;
+  height: 35px;
+}
+body header .sprite .header-logo-samsung-hover {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -121px -44px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 107px;
+  height: 35px;
+}
+body header div.container {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: -ms-flexbox;
+  /* Internet Explorer 10 */
+  display: box;
+  text-align: center;
+  width: 100%;
+}
+body header div.container a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+body header div.container h1 {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  box-flex: 1;
+  display: block;
+  margin-left: 20px;
+  margin-top: 5px;
+  text-indent: -9999px;
+}
+body header div.container h1 a {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -5px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 203px;
+  height: 29px;
+  transition: opacity 250ms;
+}
+body header div.container h1 a:hover {
+  opacity: 0.7;
+}
+body header div.container h2 {
+  -moz-box-flex: 0.5;
+  -webkit-box-flex: 0.5;
+  -ms-flex: 0.5;
+  box-flex: 0.5;
+  margin-right: 20px;
+  text-indent: -9999px;
+}
+body header div.container h2 a {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -5px -44px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 107px;
+  height: 35px;
+  transition: opacity 250ms;
+}
+body header div.container h2 a:hover {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -121px -44px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 107px;
+  height: 35px;
+}
+body header div.container nav {
+  -moz-box-flex: 2;
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  box-flex: 2;
+}
+body header div.container nav ul {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: -ms-flexbox;
+  /* Internet Explorer 10 */
+  display: box;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  width: 100%;
+}
+body header div.container nav ul li {
+  -moz-box-flex: 1.0;
+  /* Firefox */
+  -webkit-box-flex: 1.0;
+  /* Safari and Chrome */
+  -ms-flex: 1.0;
+  /* Internet Explorer 10 */
+  -ms-flex-preferred-size: auto;
+  box-flex: 1.0;
+}
+body header div.container nav ul li a {
+  border-bottom: 1px solid #fff;
+  font-size: 12px;
+  line-height: 35px;
+  padding-bottom: 45px;
+  transition: padding 250ms;
+}
+body header div.container nav ul li a:hover {
+  padding-bottom: 0px;
+}
+body header div.container nav ul li.current a {
+  text-decoration: underline;
+}
+body header div.container div.social {
+  -moz-box-flex: 1.5;
+  -webkit-box-flex: 1.5;
+  -ms-flex: 1.5;
+  box-flex: 1.5;
+}
+body header div.container div.social a {
+  background: #fff;
+  border-radius: 50%;
+  color: #717b88;
+  font-size: 20px;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 10px;
+  text-align: center;
+  transition: background 250ms;
+  vertical-align: middle;
+  width: 35px;
+}
+body header div.container div.social a.fa-facebook:hover {
+  background: #3B5998;
+}
+body header div.container div.social a.fa-twitter:hover {
+  background: #36b8e6;
+}
+body header div.container div.social a.fa-youtube:hover {
+  background: #b61f26;
+}
+body header div.container div.social a:last-child {
+  margin-right: 0px;
+}
+body div#content {
+  height: 100%;
+}
+body div#content section {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+body div#content section div.container > div.text {
+  font-family: 'samsung-bold';
+  position: relative;
+}
+body div#content section div.container > div.text h2 {
+  font-size: 35px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+body div#content section div.container > div.text h2 span {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body div#content section div.container > div.text h3 {
+  font-size: 60px;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+body div#content section div.container > div.text p {
+  font-size: 13px;
+  margin-bottom: 20px;
+  width: 260px;
+}
+body div#content section div.container > div.text p:last-child {
+  margin-bottom: 0px;
+}
+body div#content section.enabled {
+  opacity: 1;
+}
+body div#content div.tablet-fixed {
+  height: 563px;
+  left: 50%;
+  margin-left: -407px;
+  margin-top: -200px;
+  position: fixed;
+  top: 50%;
+  width: 815px;
+  z-index: -1;
+}
+body div#content div.tablet-fixed div.content {
+  padding: 54px 44px;
+}
+body div#content div.tablet-fixed div.content div.black {
+  background: #181818;
+  height: 455px;
+  position: relative;
+  width: 726px;
+  z-index: 3;
+}
+body div#content div.tablet-fixed div.content div.black div {
+  height: 224px !important;
+  opacity: 0;
+  transition: opacity 250ms;
+  width: 359px !important;
+}
+body div#content div.tablet-fixed div.content div.black div.window1 {
+  background: url(/img/screen12/screen12-tablet-window1.jpg) 0 0 no-repeat;
+  float: left;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+body div#content div.tablet-fixed div.content div.black div.window2 {
+  background: url(/img/screen12/screen12-tablet-window2.jpg) 0 0 no-repeat;
+  float: left;
+  margin-bottom: 7px;
+}
+body div#content div.tablet-fixed div.content div.black div.window3 {
+  background: url(/img/screen12/screen12-tablet-window3.jpg) 0 0 no-repeat;
+  clear: both;
+  float: left;
+  margin-right: 7px;
+}
+body div#content div.tablet-fixed div.content div.black div.window4 {
+  background: url(/img/screen12/screen12-tablet-window4.jpg) 0 0 no-repeat;
+  float: left;
+}
+body div#content div.tablet-fixed div.content div.black div.enabled {
+  opacity: 1;
+}
+body div#content div.tablet-fixed div.content div.black span {
+  background: #202020;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 250ms;
+}
+body div#content div.tablet-fixed div.content div.black span.h {
+  height: 7px;
+  margin-top: -4px;
+  top: 50%;
+  width: 100%;
+}
+body div#content div.tablet-fixed div.content div.black span.v {
+  height: 100%;
+  margin-left: -3px;
+  left: 50%;
+  width: 7px;
+}
+body div#content div.tablet-fixed div.content div.black span.enabled {
+  opacity: 1;
+}
+body div#content div.tablet-fixed div.content div.documents-office {
+  height: 269px;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -202px;
+  position: absolute;
+  transition: opacity 20ms;
+  top: 50%;
+  width: 424px;
+  z-index: 10;
+}
+body div#content div.tablet-fixed div.content div.documents-office img {
+  opacity: 0;
+  position: absolute;
+}
+body div#content div.tablet-fixed div.content div.documents-office img.enabled {
+  opacity: 1;
+}
+body div#content div.tablet-fixed div.content div#drag-office {
+  color: #fff;
+  left: 50%;
+  margin-left: -550px;
+  margin-top: 100px;
+  position: absolute;
+  top: 50%;
+  width: 460px;
+  z-index: 11;
+}
+body div#content div.tablet-fixed div.content div#drag-office p.fa {
+  cursor: move;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+body div#content div.tablet-fixed div.content div#drag-office p.fa:before {
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  display: block;
+  height: 38px;
+  font-size: 20px;
+  line-height: 38px;
+  position: relative;
+  text-align: center;
+  width: 38px;
+  z-index: 2;
+}
+body div#content div.tablet-fixed div.content div#drag-office p:hover:before {
+  background: #000;
+  color: #fff;
+}
+body div#content div.tablet-fixed div.content div#drag-office:before {
+  border-top: 1px dashed #000;
+  border-radius: 5px;
+  height: 1px;
+  content: '';
+  position: absolute;
+  top: 19px;
+  width: 460px;
+  z-index: 1;
+}
+body div#content div.tablet-fixed div.content div.hand-office {
+  background: url(/img/office/office-hand.png) 0 0 no-repeat;
+  bottom: 50%;
+  height: 587px;
+  position: absolute;
+  right: 50%;
+  width: 906px;
+}
+body div#content div.tablet-fixed div.content div.hand-office div.pulgar {
+  background: url(/img/office/office-hand-pulgar.png) 0 0 no-repeat;
+  height: 163px;
+  left: 203px;
+  position: relative;
+  top: -2px;
+  width: 124px;
+  z-index: 9;
+}
+body div#content div.tablet-fixed div.content div.hand-spen {
+  background: url(/img/spen/spen-hand.png) 0 0 no-repeat;
+  height: 480px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 875px;
+}
+body div#content div.tablet-fixed div.content div.hand-spen div.pulgar {
+  background: url(/img/spen/spen-hand-pulgar.png) 0 0 no-repeat;
+  height: 163px;
+  right: -562px;
+  position: relative;
+  top: -14px;
+  width: 124px;
+  z-index: 9;
+}
+body div#content div.tablet-fixed div.content div.office-bg {
+  height: 398px;
+  left: 393px;
+  position: absolute;
+  top: 84px;
+  z-index: 9;
+  width: 546px;
+}
+body div#content div.tablet-fixed div.content div.office-bg img {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 300ms;
+  width: 100%;
+}
+body div#content div.tablet-fixed div.content div.office-bg img.enabled {
+  opacity: 1;
+}
+body div#content div.tablet-fixed div.content div.office-bg div.bg {
+  background: url('/img/handcom-bg.png') 0 0 no-repeat;
+  background-size: 100% 100%;
+  display: none;
+  height: 100%;
+  position: absolute;
+  transition: opacity 300ms;
+  width: 100%;
+  z-index: -1;
+}
+body div#content div.tablet-fixed div.content div.office-bg.active div.bg {
+  display: block;
+}
+body div#content div.tablet-fixed div.content div.screen12-to-office {
+  left: 50%;
+  margin-left: -685px;
+  position: absolute;
+  top: -19px;
+  z-index: 3;
+}
+body div#content div.tablet-fixed div.content div.screen12-to-office img {
+  height: 616px;
+  position: relative;
+  width: 1392px;
+  z-index: 1;
+}
+body div#content div.tablet-fixed div.content div.spen-apps {
+  cursor: url(/img/spen/menu/spen-thumb.png), pointer;
+  height: 455px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 725px;
+  z-index: 4;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item {
+  height: 456px;
+  left: 44px;
+  position: absolute;
+  top: 54px;
+  width: 725px;
+  z-index: 1;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item img {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item img.bg {
+  height: 456px;
+  width: 725px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item img.display {
+  left: 30px;
+  position: absolute;
+  top: 30px;
+  transition: top 1s, opacity 500ms 500ms;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 {
+  z-index: 2;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 canvas {
+  background: #fff;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 canvas#tools_sketch {
+  display: block;
+  height: 456px !important;
+  width: 725px !important;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 canvas#tools_sketch_responsive {
+  display: none;
+  height: 321px !important;
+  width: 511px !important;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 p {
+  color: #000;
+  font-family: 'klavika-medium';
+  font-size: 25px;
+  margin-top: -25px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    z-index: 2;
+  }
+  20% {
+    opacity: 1;
+    z-index: 2;
+  }
+  35% {
+    opacity: 0;
+    z-index: 2;
+  }
+  50% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools {
+  padding-left: 10px;
+  padding-top: 5px;
+  position: absolute;
+  z-index: 2;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools a {
+  cursor: url(/img/spen/menu/spen-thumb.png), pointer;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 250ms;
+  width: 40px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools a.eraser {
+  background: url(/img/spen/spen-whiteboard-eraser.png) 0 0 no-repeat;
+  height: 33px;
+  margin-top: 9px;
+  width: 33px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools a.marker {
+  background: url(/img/spen/spen-whiteboard-write.png) 0 0 no-repeat;
+  height: 42px;
+  width: 54px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools a:hover {
+  opacity: 0.6;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools.desktop {
+  display: block;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools.responsive {
+  display: none;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled img,
+body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled canvas,
+body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled div.tools a {
+  opacity: 1;
+}
+body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled img.display,
+body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled canvas.display,
+body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled div.tools a.display {
+  top: -100px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps.skrollable-between div.item.item3 p {
+  animation: show 5s;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu {
+  left: 50%;
+  margin-left: -327px;
+  margin-top: -416px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 654px;
+  z-index: 7;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.description {
+  color: #3e3e3e;
+  font-family: 'samsung-regular';
+  opacity: 0;
+  transition: opacity 200ms;
+  width: 100%;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.description h4 {
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.description p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.description.enabled {
+  opacity: 1;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu {
+  cursor: url(/img/spen/menu/spen-thumb.png), auto;
+  color: #fff;
+  height: 209px;
+  position: absolute;
+  right: -179px;
+  top: 30px;
+  width: 264px;
+  z-index: 5;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul {
+  border-radius: 50%;
+  height: 209px;
+  overflow: hidden;
+  position: relative;
+  width: 264px;
+  z-index: 1;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul li {
+  border-radius: 50%;
+  height: 70px;
+  overflow: hidden;
+  position: absolute;
+  transition: background .5s;
+  width: 70px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul li a {
+  background: url(/img/home/ie-a.gif) 0 0 repeat;
+  cursor: url(/img/spen/menu/spen-thumb.png) 15 100, auto;
+  height: 70px;
+  display: block;
+  text-indent: -9999px;
+  width: 70px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul li a br {
+  display: none;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul li:nth-of-type(1) {
+  display: block;
+  left: 15px;
+  top: 65px;
+  z-index: 1;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul li:nth-of-type(2) {
+  display: block;
+  left: 57px;
+  top: 12px;
+  z-index: 2;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul li:nth-of-type(3) {
+  display: block;
+  left: 124px;
+  top: 6px;
+  z-index: 3;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul li:nth-of-type(4) {
+  display: block;
+  left: 175px;
+  top: 50px;
+  z-index: 4;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu ul li:nth-of-type(5) {
+  display: block;
+  left: 185px;
+  top: 111px;
+  z-index: 5;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu div.app-name {
+  background: #000;
+  border-radius: 50%;
+  display: none;
+  height: 115px;
+  left: 50%;
+  margin-left: -52.5px;
+  margin-top: -52.5px;
+  position: absolute;
+  top: 50%;
+  width: 115px;
+  z-index: 2;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu div.bgs img {
+  height: 220px;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 50ms;
+  top: 0px;
+  width: 264px;
+}
+body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu div.bgs img.enabled {
+  opacity: 1;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+@media all and (max-width: 1800px) {
+  body div#content div.tablet-fixed {
+    height: 563px;
+    top: 58%;
+    left: 50%;
+    width: 815px;
+  }
+  body div#content div.tablet-fixed div.content div.black {
+    height: 321px;
+    left: 239px;
+    top: -3px;
+    width: 512px;
+  }
+  body div#content div.tablet-fixed div.content div.black div {
+    height: 157px !important;
+    width: 252px !important;
+  }
+  body div#content div.tablet-fixed div.content div.black div.window1 {
+    background: url(/img/screen12/screen12-tablet-window1.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 7px;
+  }
+  body div#content div.tablet-fixed div.content div.black div.window2 {
+    background: url(/img/screen12/screen12-tablet-window2.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-bottom: 7px;
+  }
+  body div#content div.tablet-fixed div.content div.black div.window3 {
+    background: url(/img/screen12/screen12-tablet-window3.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    clear: both;
+    float: left;
+    margin-right: 7px;
+  }
+  body div#content div.tablet-fixed div.content div.black div.window4 {
+    background: url(/img/screen12/screen12-tablet-window4.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+  }
+  body div#content div.tablet-fixed div.content div.black div.enabled {
+    opacity: 1;
+  }
+  body div#content div.tablet-fixed div.content div.documents-office {
+    height: 269px;
+    margin-left: -250px;
+    margin-top: -230px;
+    width: 424px;
+  }
+  body div#content div.tablet-fixed div.content div#drag-office {
+    margin-left: -187px;
+    margin-top: 98px;
+    width: 460px;
+  }
+  body div#content div.tablet-fixed div.content div.hand-office {
+    background-size: 100% 100%;
+    bottom: 91%;
+    height: 370px;
+    right: 81%;
+    width: 675px;
+  }
+  body div#content div.tablet-fixed div.content div.hand-office div.pulgar {
+    background-size: 100% 100%;
+    height: 121px;
+    left: 217px;
+    top: -8px;
+    width: 105px;
+  }
+  body div#content div.tablet-fixed div.content div.hand-spen {
+    background-size: 100% 100%;
+    height: 370px;
+    left: 99%;
+    top: 23%;
+    width: 675px;
+  }
+  body div#content div.tablet-fixed div.content div.hand-spen div.pulgar {
+    background-size: 100% 100%;
+    height: 131px;
+    right: -436px;
+    top: -14px;
+    width: 96px;
+    z-index: 9;
+  }
+  body div#content div.tablet-fixed div.content div.office-bg {
+    height: 284px;
+    left: 530px;
+    top: 68px;
+    width: 384px;
+  }
+  body div#content div.tablet-fixed div.content div.screen12-to-office {
+    left: 91%;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+  }
+  body div#content div.tablet-fixed div.content div.screen12-to-office img {
+    height: 100%;
+    position: relative;
+    width: 980px;
+    z-index: 1;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps {
+    height: 321px;
+    left: 283px;
+    top: 51px;
+    width: 511px;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item {
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item img.bg {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item img.display {
+    width: 30%;
+    z-index: 3;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 canvas#tools_sketch {
+    display: none;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 canvas#tools_sketch_responsive {
+    display: block;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools.desktop {
+    display: none;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.item3 div.tools.responsive {
+    display: block;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled img,
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled canvas,
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled div.tools a {
+    opacity: 1;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled img.display,
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled canvas.display,
+  body div#content div.tablet-fixed div.content div.spen-apps div.item.enabled div.tools a.display {
+    top: -60px;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps-menu div.description {
+    padding: 40px 0px 0px 200px;
+    width: 400px;
+  }
+  body div#content div.tablet-fixed div.content div.spen-apps-menu div.menu {
+    margin-right: -67px;
+    top: 30px;
+  }
+}
+#tools_sketch_responsive {
+  width: 511px !important;
+}

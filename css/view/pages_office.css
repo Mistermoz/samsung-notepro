@@ -1,0 +1,22 @@
+/*---------------------------------------------------
+	LESS Elements 0.9
+  ---------------------------------------------------
+	A set of useful LESS mixins
+	More info at: http://lesselements.com
+  ---------------------------------------------------*/
+section.office {
+  background: url(/img/office/office-bg.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  color: #3e3e3e;
+  font-family: 'klavika-bold';
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+section.office div.container {
+  padding: 147px 0px 0px 45px;
+}
+section.office div.container div.text h3 {
+  color: #8a979c;
+}

@@ -1,0 +1,26 @@
+body header {
+  min-width: 1200px;
+}
+body header div.container h1 {
+  float: left;
+  display: inline-block;
+}
+body header div.container nav {
+  float: left;
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 100px;
+}
+body header div.container nav ul li {
+  display: inline-block;
+  flex: none;
+  margin-right: 35px;
+}
+body header div.container div.social {
+  float: left;
+  display: inline-block;
+}
+body header div.container h2 {
+  display: inline-block;
+  float: right;
+}

@@ -1,0 +1,143 @@
+/*---------------------------------------------------
+	LESS Elements 0.9
+  ---------------------------------------------------
+	A set of useful LESS mixins
+	More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.video .header-logo-pro {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -5px -5px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 203px;
+  height: 29px;
+}
+.video .header-logo-samsung {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -5px -44px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 107px;
+  height: 35px;
+}
+.video .header-logo-samsung-hover {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -121px -44px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 107px;
+  height: 35px;
+}
+section.video {
+  background: #000;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+}
+section.video video {
+  bottom: 0px;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  width: auto;
+  z-index: 15;
+}
+section.video div.pattern {
+  background: url(/img/video/before-pattern.png) 0 0 repeat;
+  display: block;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+  top: 0px;
+  width: auto;
+  z-index: 20;
+}
+section.video div.pattern a {
+  color: #fff;
+  display: inline-block;
+  font-size: 80px;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  opacity: 1;
+  position: absolute;
+  text-decoration: none;
+  transition: opacity 250ms;
+  top: 50%;
+}
+section.video div.pattern a.disabled {
+  opacity: 0;
+}
+section.video div.social {
+  color: #808282;
+  font-family: 'klavika-medium';
+  font-size: 12px;
+  margin-bottom: 40px;
+  position: absolute;
+  left: 30px;
+  text-transform: uppercase;
+  top: 30px;
+  z-index: 40;
+}
+section.video div.social a {
+  background: #3e3e3e;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 250ms;
+  width: 37px;
+}
+section.video div.social a:nth-of-type(1) {
+  margin-right: 25px;
+}
+section.video div.social a:hover:nth-of-type(1) {
+  background: #3B5998;
+}
+section.video div.social a:hover:nth-of-type(2) {
+  background: #36b8e6;
+}
+section.video div.social p {
+  display: block;
+  margin-bottom: 10px;
+}
+section.video h2 {
+  -moz-box-flex: 0.5;
+  -webkit-box-flex: 0.5;
+  -ms-flex: 0.5;
+  box-flex: 0.5;
+  margin-right: 20px;
+  position: absolute;
+  right: -1px;
+  text-indent: -9999px;
+  top: 20px;
+  z-index: 40;
+}
+section.video h2 a {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -5px -44px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 107px;
+  height: 35px;
+  transition: opacity 250ms;
+}
+section.video h2 a:hover {
+  background-image: url(/img/header/header-sp.png);
+  background-position: -121px -44px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 107px;
+  height: 35px;
+}

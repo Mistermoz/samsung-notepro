@@ -1,0 +1,18 @@
+section.spen {
+  background: url(/img/spen/spen-bg.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  border-top: 1px solid #717b88;
+  color: #3e3e3e;
+  font-family: 'klavika-bold';
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+section.spen div.container {
+  padding: 147px 0px 0px 45px;
+}
+section.spen div.container div.text h3 {
+  color: #a5a5a4;
+}
